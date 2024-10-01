@@ -11,13 +11,13 @@ public class Person {
     public Person(){
 
     }
-    public Person(int id, String firstName, String lastName, int age){
+    public Person(int id, String firstName, String lastName, Date dateOfBirth){
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.dateOfBirth = dateOfBirth;
     }
-    public Person(String firstName, String lastName, int age){
+    public Person(String firstName, String lastName, Date dateOfBirth){
         this.firstName = firstName;
         this.lastName = lastName;
         this.dateOfBirth= dateOfBirth;
@@ -48,10 +48,10 @@ public class Person {
     public String getLastName(){
         return lastName;
     }
-    public void setAge(int age){
+    public void setDateOfBirth(int age){
         this.dateOfBirth = dateOfBirth;
     }
-    public Date getAge(){
+    public Date getDateOfBirth(){
         return dateOfBirth;
     }
     public void print(){

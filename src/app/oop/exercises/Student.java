@@ -10,7 +10,7 @@ public class Student extends Person{
 
 
 
-    public Student(int id, String firstName, String lastName, int age, String combination, String school, String level){
+    public Student(int id, String firstName, String lastName, Date date, String combination, String school, String level){
 //        this.id = id;
 //        this.firstName = firstName;
 //        this.lastName = lastName;
