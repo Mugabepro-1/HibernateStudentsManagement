@@ -16,8 +16,8 @@ public class DatabaseManager {
         try(Connection conn = connect();
             PreparedStatement pstmt = conn.prepareStatement(sql);){
             pstmt.setString(1, student.getFirstName());
-            pstmt.setString((2, student.getLastName());
-            pstmt.setDate(3, new Date(student.get));
+            pstmt.setString(2, student.getLastName());
+            pstmt.setDate(3, new Date(student.getAge().getTime()));
         }catch (SQLException e){
             System.out.println(e.getMessage());
         }
