@@ -26,7 +26,7 @@ public class Person {
         this.firstName = firstName;
         this.lastName = lastName;
     }
-    public Person(int age){
+    public Person(Date dateOfBirth){
         this.dateOfBirth = dateOfBirth;
     }
 
@@ -48,7 +48,7 @@ public class Person {
     public String getLastName(){
         return lastName;
     }
-    public void setDateOfBirth(int age){
+    public void setDateOfBirth(Date dateOfBirth){
         this.dateOfBirth = dateOfBirth;
     }
     public Date getDateOfBirth(){
@@ -60,8 +60,8 @@ public class Person {
     public String print(String name, int number){
         return "I am "+name+" "+number;
     }
-    public void print(String tilte){
-        System.out.println("I am "+ tilte);
+    public void print(String title){
+        System.out.println("I am "+ title);
     }
     @Override
     public String toString(){

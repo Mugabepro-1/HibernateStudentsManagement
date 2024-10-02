@@ -1,5 +1,7 @@
 package app.oop.exercises;
 
+import java.sql.Date;
+
 public class Student extends Person{
     private String school;
     private String combination;
@@ -10,12 +12,12 @@ public class Student extends Person{
 
 
 
-    public Student(int id, String firstName, String lastName, Date date, String combination, String school, String level){
+    public Student(int id, String firstName, String lastName, Date dateOfBirth, String combination, String school, String level){
 //        this.id = id;
 //        this.firstName = firstName;
 //        this.lastName = lastName;
 //        this.age = age;
-        super(id, firstName, lastName, age);
+        super(id, firstName, lastName, dateOfBirth);
         this.combination = combination;
         this.school = school;
         this.level = level;

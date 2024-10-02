@@ -31,7 +31,7 @@ public class DatabaseConnect {
                     conn.close();
                 }
             }catch (SQLException e){
-                e.printStackTrace();
+                System.out.println(e.getMessage());
             }
         }
     }
