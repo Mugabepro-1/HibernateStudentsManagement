@@ -15,6 +15,7 @@ public class DatabaseManager {
     public DatabaseManager() {
     }
 
+
     public Connection connect() throws SQLException {
         return DriverManager.getConnection(URL, USER, PASSWORD);
     }
@@ -22,7 +23,6 @@ public class DatabaseManager {
     public void insertStudent(Student student) {
         String sql = "INSERT INTO student (firstName, lastName, dateOfBirth, school, combination, level) VALUES(?,?,?,?,?,?)";
 
-        // Use try-with-resources to ensure resources are closed automatically
         try (Connection conn = this.connect();
              PreparedStatement preparedStatement = conn.prepareStatement(sql)) {
 

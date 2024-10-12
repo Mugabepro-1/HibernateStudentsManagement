@@ -53,7 +53,14 @@ public class Student extends Person {
         super.print();
     }
 
+    @Override
     public String toString() {
-        return "Student{school='" + this.school + "', combination='" + this.combination + "', level='" + this.level + "'}";
+        return "Student{" +
+                "school='" + school + '\'' +
+                ", combination='" + combination + '\'' +
+                ", level='" + level + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                '}';
     }
 }
