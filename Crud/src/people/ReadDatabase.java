@@ -8,6 +8,10 @@ public class ReadDatabase {
     private static final String password = "mupro";
 
     Connection conn;
+    public static void main(String[] args) throws SQLException {
+        ReadDatabase readDatabase = new ReadDatabase();
+        readDatabase.getAllStudents();
+    }
 
     {
         try {
@@ -40,10 +44,4 @@ public class ReadDatabase {
         }
 
     }
-    public static void main(String[] args) throws SQLException {
-        ReadDatabase readDatabase = new ReadDatabase();
-        readDatabase.getAllStudents();
-    }
-
-
 }
