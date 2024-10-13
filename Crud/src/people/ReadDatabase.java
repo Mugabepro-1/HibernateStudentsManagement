@@ -40,6 +40,10 @@ public class ReadDatabase {
         }
 
     }
+    public static void main(String[] args) throws SQLException {
+        ReadDatabase readDatabase = new ReadDatabase();
+        readDatabase.getAllStudents();
+    }
 
 
 }
