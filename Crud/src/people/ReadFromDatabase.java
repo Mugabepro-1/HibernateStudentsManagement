@@ -266,7 +266,7 @@
 //                case 6:
 //                    try {
 //                        String CSVFilePath = "/home/humura/Documents/DB_Interaction--File_handle/src/ReadFile.csv";
-//                        String insertQuery = "INSERT INTO student(firstName, lastName, age, school, combination, level) VALUES (?, ?, ?, ?, ?, ?)";
+//                        String insertQuery = "INSE6gyggRT INTO student(firstName, lastName, age, school, combination, level) VALUES (?, ?, ?, ?, ?, ?)";
 //
 //                        CSVReader reader = new CSVReader(new FileReader(CSVFilePath));
 //                        PreparedStatement statement = conn.prepareStatement(insertQuery);

@@ -21,14 +21,15 @@ public class CsvReader {
 
     public static void main(String[] args){
         Connection connection = null;
+        String sql = "INSERT INTO student (firstName, lastName, dateOfBirth, school, combination, level) VALUES(?,?,?,?,?,?)";
+        System.out.print("Enter file path: ");
         Scanner scanner = new Scanner(System.in);
         String filePath = scanner.next();
 
-        try{
-            connection = DriverManager.getConnection(url, user, password);
-            String sql = "INSERT INTO student (firstName, lastName, dateOfBirth, school, combination, level) VALUES(?,?,?,?,?,?)";
+        try(CSVReader csvReaderBuilder = new CSVReaderBuilder(new FileReader(filePath)).withSkipLines(1).build();
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
-            CSVReader csvReaderBuilder = new CSVReaderBuilder(new FileReader(filePath)).withSkipLines(1).build();
+        ){
+            connection = DriverManager.getConnection(url, user, password);
             String[] nextLine;
             while ((nextLine = csvReaderBuilder.readNext()) != null){
                 String firstName = nextLine[0];
@@ -43,7 +44,7 @@ public class CsvReader {
                 preparedStatement.setString(3, dateOfBirth);
                 preparedStatement.setString(4, school);
                 preparedStatement.setString(5, combination);
-                preparedStatement.setString(5, level);
+                preparedStatement.setString(6, level);
                 preparedStatement.executeUpdate();
             }
             csvReaderBuilder.close();
