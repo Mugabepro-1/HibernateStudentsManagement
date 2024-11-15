@@ -1,7 +1,7 @@
-package poeple.util;
+package people.util;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
-import poeple.model.Student;
+import people.model.Student;
 
 public class HibernateUtil {
     private static final SessionFactory factory;

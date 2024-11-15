@@ -10,7 +10,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../Dependencies/hibernate-c3p0-5.3.24.Final.jar!/" />
+          <root url="jar://$USER_HOME$/Documents/Programming/Java/Dependencies/postgresql-42.7.4.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -19,7 +19,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../Dependencies/hibernate-commons-annotations-5.0.4.Final.jar!/" />
+          <root url="jar://$USER_HOME$/Documents/Programming/Java/Dependencies/javax.persistence-api-2.2.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -28,7 +28,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../Dependencies/hibernate-core-5.4.1.Final.jar!/" />
+          <root url="jar://$USER_HOME$/Documents/Programming/Java/Dependencies/hibernate-jpa-2.1-api-1.0.2.Final.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -37,7 +37,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../Dependencies/hibernate-jpa-2.1-api-1.0.2.Final.jar!/" />
+          <root url="jar://$USER_HOME$/Documents/Programming/Java/Dependencies/hibernate-core-5.4.1.Final.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -46,7 +46,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../Dependencies/javax.persistence-api-2.2.jar!/" />
+          <root url="jar://$USER_HOME$/Documents/Programming/Java/Dependencies/hibernate-commons-annotations-5.0.4.Final.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -55,7 +55,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../Dependencies/postgresql-42.7.4.jar!/" />
+          <root url="jar://$USER_HOME$/Documents/Programming/Java/Dependencies/hibernate-c3p0-5.3.24.Final.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

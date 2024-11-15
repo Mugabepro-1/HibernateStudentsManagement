@@ -1,10 +1,11 @@
-package poeple.model;
+package people.model;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 import java.sql.Date;
+import java.time.LocalDate;
 
 @MappedSuperclass
 public class Person {
@@ -14,19 +15,19 @@ public class Person {
     private int id;
     protected String firstName;
     protected String lastName;
-    private Date dateOfBirth;
+    private LocalDate dateOfBirth;
 
     public Person() {
     }
 
-    public Person(int id, String firstName, String lastName, Date dateOfBirth) {
+    public Person(int id, String firstName, String lastName, LocalDate dateOfBirth) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.dateOfBirth = dateOfBirth;
     }
 
-    public Person(String firstName, String lastName, Date dateOfBirth) {
+    public Person(String firstName, String lastName, LocalDate dateOfBirth) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.dateOfBirth = dateOfBirth;
@@ -37,7 +38,7 @@ public class Person {
         this.lastName = lastName;
     }
 
-    public Person(Date dateOfBirth) {
+    public Person(LocalDate dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
     }
 
@@ -65,11 +66,11 @@ public class Person {
         return this.lastName;
     }
 
-    public void setDateOfBirth(Date dateOfBirth) {
+    public void setDateOfBirth(LocalDate dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
     }
 
-    public Date getDateOfBirth() {
+    public LocalDate getDateOfBirth() {
         return this.dateOfBirth;
     }
 

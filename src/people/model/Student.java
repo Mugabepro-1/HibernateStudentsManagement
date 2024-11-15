@@ -1,8 +1,9 @@
-package poeple.model;
+package people.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Table;
 import java.sql.Date;
+import java.time.LocalDate;
 
 @Entity
 @Table(name = "student")
@@ -14,14 +15,14 @@ public class Student extends Person {
     public Student() {
     }
 
-    public Student(int id, String firstName, String lastName, Date dateOfBirth, String school, String combination, String level) {
+    public Student(int id, String firstName, String lastName, LocalDate dateOfBirth, String school, String combination, String level) {
         super(id, firstName, lastName, dateOfBirth);
         this.combination = combination;
         this.school = school;
         this.level = level;
     }
 
-    public Student(String firstName, String lastName, Date dateOfBirth, String school, String combination, String level) {
+    public Student(String firstName, String lastName, LocalDate dateOfBirth, String school, String combination, String level) {
         super(firstName, lastName, dateOfBirth);
         this.school = school;
         this.combination = combination;
